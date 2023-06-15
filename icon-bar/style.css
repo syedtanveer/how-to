@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+section {
+  margin: 1rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+.icon-bar {
+  width: 400px;
+  background: #555;
+  overflow: auto;
+}
+
+.icon-bar > a {
+  float: left;
+  width: 20%;
+  padding: 12px;
+  text-align: center;
+  color: white;
+  font-size: 1.8rem;
+}
+
+.icon-bar > a:hover,
+.icon-bar > a:active {
+  background-color: black;
+}
+
+.icon-bar > a.active {
+  background-color: rgb(29, 146, 56);
+}
+
+/* vertical icon bar */
+
+.vertical-icon-bar {
+  width: 57px;
+  background: #555;
+  overflow: auto;
+}
+.vertical-icon-bar > a {
+  display: block;
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 12px;
+}
+
+.vertical-icon-bar > a:hover,
+.vertical-icon-bar > a:active {
+  background-color: black;
+}
+
+.vertical-icon-bar > a.active {
+  background-color: rgb(29, 146, 56);
+}

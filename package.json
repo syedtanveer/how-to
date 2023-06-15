@@ -1,0 +1,10 @@
+{
+  "name": "how-to",
+  "version": "1.0.0",
+  "description": "html, css and js based components",
+  "scripts": {
+    "create": "node .scripts/create-project.js"
+  },
+  "author": "syedtanveer",
+  "license": "ISC"
+}

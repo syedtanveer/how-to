@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.top-nav {
+  background-color: #555;
+  overflow: hidden;
+  padding: 0;
+}
+
+.top-nav > li {
+  float: left;
+  list-style: none;
+}
+
+.top-nav > .icon {
+   display: none;
+}
+
+.top-nav > li:hover {
+  background-color: black;
+}
+
+.top-nav > li.active {
+  background-color: #389c67;
+}
+
+.top-nav > li > a {  
+  display: inline-block;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.top-nav > li > a > i {
+  margin-right: 8px;
+}
+
+.top-nav > .icon > #menu-icon > i {
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .top-nav > li:not(:first-child)  {
+    display: none;
+  }
+
+  .top-nav > li.icon {
+    display: block;
+    float: right;
+  }
+
+  .top-nav.responsive {
+    position: relative;
+  }
+  .top-nav.responsive > .icon {
+    position: absolute;
+    right: 0;
+    top: 0
+  }
+
+  .top-nav.responsive > li {
+    float: none;
+    display: block;
+  }
+
+  .top-nav.responsive > li > a {
+    text-align: left;
+    width: 100%;
+  }
+}

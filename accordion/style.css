@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.accordion {
+  max-width: 500px;
+  width: 100%;
+}
+
+.accordion > .accordion-button {
+  position: relative;
+  width: 100%;
+  border: none;
+  padding: 0.8rem 1rem;
+  text-align: start;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #d8d8d8;
+  outline: none;
+}
+
+.accordion > .accordion-button::after {
+  position: absolute;
+  content: "+";
+  right: 1rem;
+  font-weight: 700;
+}
+
+.accordion.active > .accordion-button::after {
+  position: absolute;
+  content: "-";
+  right: 1rem;
+  font-weight: 700;
+}
+
+.accordion > .accordion-body {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  padding: 0 1rem;
+}
+
+.accordion > .accordion-body > p {
+  margin: 0.8rem 0;
+}

@@ -1,0 +1,47 @@
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+    
+    * {
+      margin: 0;
+    }
+    
+    html,
+    body {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+    
+    .tabs {
+      overflow: hidden;
+      width: 100%;
+      background-color: #ddd;
+      border: 1px solid #ccc;
+      border-bottom: none;
+    }
+    .tab {
+      float: left;
+      outline: none;
+      background: transparent;
+      border: none;
+      padding: 0.8rem 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    
+    .tab:hover, .tab:active, .tab.active {
+      background-color: black;
+      color: white;
+    }
+    .tab-panel {
+      border: 1px solid #ccc;
+      display: none;
+      padding: 1rem;
+    }
+
+    .tab-panel.active {
+      display: block;
+    }

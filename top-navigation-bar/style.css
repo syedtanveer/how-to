@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.top-nav {
+  overflow: hidden;
+  padding: 0;
+  background-color: #555;
+  font-size: 1rem;
+  color: white;
+}
+
+.top-nav > li {
+  float: left;
+  list-style: none;
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+}
+.top-nav > li:active,
+.top-nav > li:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+.top-nav > li.active {
+  background-color: #389c67;
+  color: white;
+}
