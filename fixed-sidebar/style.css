@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.sidenav {
+  /* comment this */
+  height: 100%;
+  position: fixed;
+  width: 12rem;
+  padding: 1.4rem;
+  background-color: #001219;
+  /* and uncomment this for auto height side-bar */
+  /* margin: 1rem; */
+}
+
+.sidenav > a {
+  display: block;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #e9d8a6;
+}
+
+.sidenav > a:hover {
+  color: white;
+}
+
+.main {
+  padding: 1.4rem;
+  padding-left: 14rem;
+  background-color: #e9d8a6;
+  height: 100%;
+}
+
+h1 {
+  color: #9b2226;
+  margin-bottom: 1rem;
+}

@@ -19,14 +19,15 @@ rl.question("Enter component name: ", (folderName) => {
 
   rl.question("Do you need a JS file Y/N: ", (choice) => {
     const hasJS = choice === "Y" || choice === "y";
-    const htmlContent = `
-    <!DOCTYPE html>
+    const htmlContent = `<!DOCTYPE html>
     <html lang="en">
       <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css">${hasJS ? '\n\t\t\t\t<script src="script.js" defer></script>': ''}
+        <link rel="stylesheet" href="style.css">${
+          hasJS ? '\n\t\t\t\t<script src="script.js" defer></script>' : ""
+        }
         <title>${componentName || folderName}</title>
       </head>
       <body>
@@ -34,8 +35,8 @@ rl.question("Enter component name: ", (folderName) => {
       </body>
     </html>
     `;
-    
-      const cssContent = `
+
+    const cssContent = `
     *,
     *::before,
     *::after {

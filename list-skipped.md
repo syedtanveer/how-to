@@ -7,3 +7,4 @@
 - hover tabs
 - split navigation
 - navbar with icons
+- search bar

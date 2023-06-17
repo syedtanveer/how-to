@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.side-navigation {
+  left: -12rem;
+  z-index: 2;
+  height: 100%;
+  position: fixed;
+  width: 12rem;
+  padding: 1.4rem;
+  background-color: #001219;
+  transition: 0.4s transform;
+}
+
+.side-navigation.open {
+  transform: translateX(100%);
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: white;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  padding: 4px;
+  
+}
+
+.close-btn:hover {
+  background-color: #e9d8a6;
+  color: #001219;
+}
+
+.side-navigation > a {
+  display: block;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #e9d8a6;
+}
+
+.side-navigation > a:hover,
+.side-navigation > a:active {
+  color: white;
+}
+
+.main {
+  display: flex;
+  padding: 1.4rem 1.4rem 1.4rem 0;
+  background-color: #e9d8a6;
+  height: 100%;
+  transition: 0.4s margin-left;
+}
+
+/* uncomment this for side navigation with shift */
+/* .main.side-navigation-open {
+  margin-left: 12rem;
+} */
+
+.nav-icon {
+  padding: 0 1.4rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: 100;
+  padding: 0;
+  line-height: 0.8;
+  margin-bottom: 1rem;
+}
+
+.underlay {
+  display: none;
+  opacity: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: 0.4s opacity;
+}
+
+.underlay.open {
+  display: block;
+  opacity: 1;
+}
