@@ -15,10 +15,12 @@ body {
 }
 
 .side-navigation {
+  /* left: -100%; */
   left: -12rem;
   z-index: 2;
   height: 100%;
   position: fixed;
+  /* width: 100%; */
   width: 12rem;
   padding: 1.4rem;
   background-color: #001219;
@@ -74,9 +76,9 @@ body {
 }
 
 /* uncomment this for side navigation with shift */
-/* .main.side-navigation-open {
+.main.side-navigation-open {
   margin-left: 12rem;
-} */
+}
 
 .nav-icon {
   padding: 0 1.4rem;

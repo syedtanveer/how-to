@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.scrollmenu {
+  display: flex;
+  width: 500px;
+  overflow: auto;
+  white-space: nowrap;
+  background-color: #333;
+  flex-wrap: nowrap;
+}
+
+.scrollmenu > a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 0.8rem 1.4rem;
+  text-align: center;
+}
+
+.scrollmenu > a:hover,
+.scrollmenu > a:active {
+  color: #222;
+  background-color: #ddd;
+}

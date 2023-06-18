@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+.sidebar {
+  overflow: auto;
+  width: 100%;
+  background-color: #1e88e5;
+  margin-bottom: 1rem;
+}
+
+.sidebar > a {
+  float: left;
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem 0.8rem;
+  color: white;
+}
+
+.sidebar > a.active,
+.sidebar > a:hover {
+  background-color: #0d47a1
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: 100;
+  padding: 0;
+  line-height: 0.8;
+  margin-bottom: 1rem;
+  line-height: 56px;
+}
+
+.content {
+  padding: 0.8rem;
+}
+.content section {
+  line-height: 22px;
+}
+
+@media screen and (min-width: 768px) {
+  .sidebar {
+    width: 16rem;
+    float: left;
+    height: 100%;
+    margin-inline-end: 1rem;
+  }
+  .sidebar > a { 
+    float: none;
+    display: block;
+  }
+}
