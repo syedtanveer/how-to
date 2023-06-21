@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+/* When you define an element with position: sticky you're automatically
+defining the parent element as a sticky container! So we need body to take full scroll height*/
+
+html {
+  min-height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.extra-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3eff5;
+  font-size: 1.6rem;
+  padding: 2rem;
+}
+
+.extra-top h1 {
+  font-size: 2.8rem;
+  padding: 2rem;
+}
+
+
+
+.navbar {
+  position: sticky;
+  top: 0;
+  overflow: auto;
+  width: 100%;
+  background-color: #454955;
+}
+
+.navbar > a {
+  float: left;
+  padding: 0.8rem 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar > a.active,
+.navbar > a:active,
+.navbar > a:hover {
+  background-color: #72b01d;
+}
+
+main {
+  max-width: 768px;
+  width: 90%;
+  margin: auto;
+}
+
+main h1 {
+  margin: 1.8rem 0;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
