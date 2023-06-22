@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+form {
+  margin: 2rem auto;
+  padding: 2rem;
+  width: 25%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.select-group {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+}

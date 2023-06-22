@@ -20,3 +20,4 @@
 - centered menu links
 - equal width menu links
 - fixed menu
+- navbar on image
