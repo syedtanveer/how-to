@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+}
+
+aside {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #22223b;
+}
+
+aside a, aside button {
+  color: white;
+  padding: 0.8rem 1rem;
+  width: 100%;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+aside a:hover, aside button:hover {
+  background-color: #3a86ff;
+}
+
+main {
+  flex: 5;
+  padding: 1.4rem;
+}
+
+.dropdown-container a {
+  padding-left: 1.8rem;
+}
+
+.dropdown-container > button {
+  display: flex;
+  justify-content: space-between;
+  background-color: inherit;
+  font-size: 1em;
+  border: none;
+  outline: none;
+}
+
+.dropdown {
+  display: none;
+}
+.dropdown-active {
+  display: flex;
+  flex-direction: column;
+}
