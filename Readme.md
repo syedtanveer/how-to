@@ -28,7 +28,3 @@ Commit your changes and push them to your fork.
 Submit a pull request, describing the changes you have made.
 
 Please ensure that your contributions adhere to the coding style and guidelines used in this project.
-
-## License
-
-This project is licensed under the MIT License. Feel free to use and modify the code in this repository for your own purposes.
