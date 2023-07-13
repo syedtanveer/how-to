@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  gap: 8px
+}
+
+.pagination a {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #000;
+}
+
+.pagination a:hover {
+  background-color: #ccc;
+}
+
+.pagination a.active {
+  color: white;
+  background-color: #0077b6;
+}

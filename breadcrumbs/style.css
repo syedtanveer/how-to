@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.breadcrumb {
+  padding: 1rem;
+  list-style: none;
+  background-color: #eee;
+}
+
+.breadcrumb li {
+  display: inline-block;
+  color: black;
+}
+
+.breadcrumb li:not(:first-child)::before{
+  content: "/\00a0 ";
+  padding: 8px;
+  color: inherit;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #0275D8;
+}

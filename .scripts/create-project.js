@@ -9,13 +9,17 @@ const rl = readline.createInterface({
 
 rl.question("Enter component name: ", (folderName) => {
   // Create the folder
-  fs.mkdirSync(folderName);
-
+  const fName = folderName
+  ?.toLowerCase()
+  .split(" ")
+  .join("-");
+  fs.mkdirSync(fName);
   // Generate index.html
   const componentName = folderName
-    ?.split("-")
-    ?.map((x) => x.charAt(0).toUpperCase() + x.slice(1))
-    ?.join("");
+    ?.toLowerCase()
+    .split(" ")
+    .map((x) => x.charAt(0).toUpperCase() + x.slice(1))
+    .join("");
 
   rl.question("Do you need a JS file Y/N: ", (choice) => {
     const hasJS = choice === "Y" || choice === "y";
@@ -28,7 +32,7 @@ rl.question("Enter component name: ", (folderName) => {
         <link rel="stylesheet" href="style.css">${
           hasJS ? '\n\t\t\t\t<script src="script.js" defer></script>' : ""
         }
-        <title>${componentName || folderName}</title>
+        <title>${componentName || fName}</title>
       </head>
       <body>
       
@@ -55,13 +59,13 @@ rl.question("Enter component name: ", (folderName) => {
     `;
 
     if (hasJS) {
-      fs.writeFileSync(path.join(folderName, "script.js"), "");
+      fs.writeFileSync(path.join(fName, "script.js"), "");
     }
 
-    fs.writeFileSync(path.join(folderName, "index.html"), htmlContent);
+    fs.writeFileSync(path.join(fName, "index.html"), htmlContent);
 
-    fs.writeFileSync(path.join(folderName, "style.css"), cssContent);
-    console.log(`Component '${folderName}' created successfully.`);
+    fs.writeFileSync(path.join(fName, "style.css"), cssContent);
+    console.log(`Component '${fName}' created successfully.`);
     rl.close();
   });
 });

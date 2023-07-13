@@ -22,3 +22,14 @@
 - fixed menu
 - navbar on image
 - dropdown in topnav
+- responsive navbar dropdown
+- dropup
+- mobile menu
+- curtain menu
+- collapsed sidebar
+- collapsed sidepanel
+- button group
+- vertical button group
+- sticky social bar
+- pill navigation
+- responsive header
