@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-thumbnail {
+  margin: auto;
+  width: 400px;
+  height: 225px;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.image-thumbnail__image {
+  width: 100%;
+  height: 100%;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal .close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 2.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+.modal-content {
+  width: 800px;
+  height: 450px;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.modal-content > .modal-content-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-content .modal-caption {
+  text-align: center;
+  color: white;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}

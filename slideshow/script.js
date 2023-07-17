@@ -31,7 +31,7 @@ function addAndShow(addCount, totalCount) {
 }
 function show(currentSlide) {
     for(let i = 0; i < slides.length; i++) {
-        if(i === Math.abs(currentSlide)) {
+        if(i === currentSlide) {
             slides[i].style.display = 'block';
             dots[i].classList.add('dot-active');
         } else {
